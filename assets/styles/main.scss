@@ -1,17 +1,34 @@
+// fonts
+@import "./fonts.scss";
+
+// icons
+@import "./icons.scss";
+
 .defualt-page-container {
-  width: 1020px;
+  width: 100%;
   margin: 0 auto;
+  background-color: white;
+  border: 1px solid rgba(224, 224, 224, 1);
+  border-radius: 6px;
+  box-shadow:  5px 6px 16px 5px rgba(58, 53, 65, 0.12);
+
 
   .header {
-    margin: 20px 0;
+    padding: 20px;
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
+
+    .v-btn {
+      color: white;
+      .icon-plus {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%) hue-rotate(23deg) brightness(107%) contrast(101%);
+      }
+    }
   }
   .main-container {
-    border: 1px solid rgba(224, 224, 224, 1);
-    border-radius: 6px;
+
     .filters {
       width: 100%;
       padding: 0 20px;

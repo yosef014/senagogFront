@@ -2,7 +2,7 @@
   <section class="defualt-page-container">
     <div class="header">
       <h1>נדרים</h1>
-      <v-btn color="primary">
+      <v-btn color="#9155fd">
         <v-icon>mdi-plus</v-icon>
         הוספת נדר</v-btn>
     </div>

@@ -2,8 +2,8 @@
   <section class="defualt-page-container">
     <div class="header">
       <h1>מתפללים</h1>
-      <v-btn color="primary">
-        <v-icon>mdi-plus</v-icon>
+      <v-btn color="#9155fd">
+        <i class="icon icon-plus"/>
         הוספת מתפלל</v-btn>
     </div>
 

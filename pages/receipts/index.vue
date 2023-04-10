@@ -2,7 +2,7 @@
   <section class="defualt-page-container">
     <div class="header">
       <h1>הכנסות</h1>
-      <v-btn color="primary">
+      <v-btn color="#9155fd">
         <v-icon>mdi-plus</v-icon>
         הוספת הכנסה</v-btn>
     </div>

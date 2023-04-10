@@ -1,0 +1,331 @@
+.icon {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  &.icon-search {
+    width: 30px;
+    height: 30px;
+    background-image: url('~/assets/icons/search.svg');
+  }
+  &.icon-wheel {
+    width: 20px;
+    height: 20px;
+    background-image: url('~/assets/icons/wheel.svg');
+  }
+  &.icon-favorites {
+    width: 20px;
+    height: 20px;
+    background-image: url("~/assets/icons/favorites.svg");
+  }
+  &.icon-favorites-red {
+    width: 20px;
+    height: 20px;
+    background-image: url("~/assets/icons/favorites-red.svg");
+  }
+  &.icon-cart {
+    width: 20px;
+    height: 20px;
+    background-image: url("~/assets/icons/cart.svg");
+  }
+  &.icon-cart-black {
+    width: 20px;
+    height: 20px;
+    background-image: url("~/assets/icons/cart-black.svg");
+  }
+  &.icon-half-arrow {
+    width: 12px;
+    height: 12px;
+    background-image: url("~/assets/icons/half-arrow.svg");
+  }
+  &.icon-discount {
+    width: 20px;
+    height: 20px;
+    background-image: url("~/assets/icons/discount.svg");
+  }
+  &.icon-helmets {
+    width: 40px;
+    height: 40px;
+    background-image: url("~/assets/icons/helmets.svg");
+  }
+  &.icon-gloves {
+    width: 40px;
+    height: 40px;
+    background-image: url("~/assets/icons/gloves.svg");
+  }
+  &.icon-riding-jackets {
+    width: 40px;
+    height: 40px;
+    background-image: url("~/assets/icons/riding-jackets.svg");
+  }
+  &.icon-boots {
+    width: 40px;
+    height: 40px;
+    background-image: url("~assets/icons/boots.svg");
+  }
+  &.icon-speakers {
+    width: 40px;
+    height: 40px;
+    background-image: url("~assets/icons/speakers.svg");
+  }
+  &.icon-rain-suits {
+    width: 40px;
+    height: 40px;
+    background-image: url("~/assets/icons/rain-suits.svg");
+  }
+  &.icon-kneepads {
+    width: 40px;
+    height: 40px;
+    background-image: url("~/assets/icons/kneepads.svg");
+  }
+  &.icon-whatsapp {
+    width: 16px;
+    height: 16px;
+    background-image: url("~assets/icons/whatsapp.svg");
+  }
+  &.icon-telephone {
+    width: 16px;
+    height: 16px;
+    background-image: url("~assets/icons/telephone.svg");
+  }
+  &.icon-letter {
+    width: 16px;
+    height: 16px;
+    background-image: url("~assets/icons/letter.svg");
+  }
+  &.icon-pen {
+    width: 20px;
+    height: 20px;
+    background-image: url("~assets/icons/pen.svg");
+  }
+  &.icon-returns {
+    width: 30px;
+    height: 30px;
+    background-image: url("~assets/icons/returns.svg");
+  }
+  &.icon-secured {
+    width: 30px;
+    height: 30px;
+    background-image: url("~assets/icons/secured.svg");
+  }
+  &.icon-customers-service {
+    width: 30px;
+    height: 30px;
+    background-image: url("~assets/icons/customers-service.svg");
+  }
+  &.icon-track {
+    width: 30px;
+    height: 30px;
+    background-image: url("~assets/icons/track.svg");
+  }
+  &.icon-hamburger {
+    width: 30px;
+    height: 30px;
+    background-image: url("~assets/icons/hamburger.svg");
+  }
+  &.icon-x {
+    width: 20px;
+    height: 20px;
+    background-image: url("~assets/icons/x.svg");
+  }
+  &.icon-credit-card {
+    width: 30px;
+    height: 30px;
+    background-image: url("~assets/icons/credit-card.svg");
+  } &.icon-safe-payment {
+    width: 30px;
+    height: 30px;
+    background-image: url("~assets/icons/safe-payment.svg");
+  }  &.icon-visa {
+    width: 36px;
+    height: 18px;
+    background-image: url("~assets/icons/visa.svg");
+  }
+  &.icon-master-card {
+    width: 36px;
+    height: 18px;
+    background-image: url("~assets/icons/master-card.svg");
+  }
+  &.icon-american-express {
+    width: 36px;
+    height: 18px;
+    background-image: url("~assets/icons/american-express.svg");
+  }
+  &.icon-isra-card {
+    width: 36px;
+    height: 18px;
+    background-image: url("~assets/icons/isra-card.svg");
+  }
+  &.icon-send {
+    width: 14px;
+    height: 14.5px;
+    background-image: url("~assets/icons/send.svg");
+  }
+  &.icon-facebook {
+    width: 28px;
+    height: 28px;
+    background-image: url("~assets/icons/facebook.svg");
+  }
+  &.icon-apple {
+    width: 28px;
+    height: 28px;
+    background-image: url("~assets/icons/apple.svg");
+  }
+  &.icon-google {
+    width: 28px;
+    height: 28px;
+    background-image: url("~assets/icons/google.svg");
+  }
+  &.icon-check-phone {
+    width: 61px;
+    height: 77px;
+    background-image: url("~assets/icons/check-phone.svg");
+  }
+  &.icon-trash {
+    width: 30px;
+    height: 30px;
+    background-image: url("~assets/icons/trash.svg");
+  }
+  &.icon-favorite-arrow {
+    width: 30px;
+    height: 30px;
+    background-image: url("~assets/icons/favorite-arrow.svg");
+  }
+  &.icon-pen-black {
+    width: 30px;
+    height: 30px;
+    background-image: url("~assets/icons/pen-black.svg");
+  }
+  &.icon-minus {
+    width: 10px;
+    height: 10px;
+    background-image: url("~assets/icons/minus.svg");
+  }
+  &.icon-plus {
+    width: 18px;
+    height: 18px;
+    background-image: url("~assets/icons/plus.svg");
+  }
+  &.icon-v {
+    width: 12px;
+    height: 12px;
+    background-image: url("~assets/icons/v.svg");
+  }
+  &.icon-white-v {
+    width: 12px;
+    height: 12px;
+    background-image: url("~assets/icons/v.svg");
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%) hue-rotate(23deg) brightness(107%) contrast(101%);
+  }
+  &.icon-sort {
+    width: 20px;
+    height: 20px;
+    background-image: url("~assets/icons/sort.svg");
+  }
+  &.icon-view-list {
+    width: 20px;
+    height: 20px;
+    background-image: url("~assets/icons/view-list.svg");
+  }
+  &.icon-view-blocks {
+    width: 20px;
+    height: 20px;
+    background-image: url("~assets/icons/view-blocks.svg");
+  }
+  &.icon-star {
+    width: 16px;
+    height: 16px;
+    background-image: url("~assets/icons/star.svg");
+  }
+  &.icon-download-arrow {
+    width: 9px;
+    height: 14px;
+    background-image: url("~assets/icons/download-arrow.svg");
+  }
+  &.icon-order-provided {
+    background-image: url("~assets/icons/order-provided.svg");
+  }
+  &.icon-delivery-in-process {
+    background-image: url("~assets/icons/delivery-in-process.svg");
+  }
+  &.icon-order-in-process {
+    background-image: url("~assets/icons/order-in-process.svg");
+  }
+  &.icon-order-accepted {
+    background-image: url("~assets/icons/order-accepted.svg");
+  }
+  &.icon-clock {
+    width: 20px;
+    height: 20px;
+    background-image: url("~assets/icons/clock.svg");
+  }
+  &.icon-personal-area {
+    width: 20px;
+    height: 20px;
+    background-image: url("~assets/icons/personal-area.svg");
+  }
+  &.icon-metro-motor-logo {
+    width: 20px;
+    height: 20px;
+    background-image: url("~assets/icons/metro-motor-logo.svg");
+  }
+  &.icon-pdf {
+    width: 18px;
+    height: 24px;
+    background-image: url("~assets/icons/pdf.svg");
+  }
+  &.icon-payplus {
+    width: 66px;
+    height: 20px;
+    background-image: url("~assets/icons/payplus.svg");
+  }
+  &.icon-phone {
+    width: 16px;
+    height: 16px;
+    background-image: url("~assets/icons/phone.svg");
+  }
+  &.icon-youtube-gray {
+    width: 25px;
+    height: 25px;
+    background-image: url("~assets/icons/youtube-gray.svg");
+  }
+  &.icon-facebook-gray {
+    width: 25px;
+    height: 25px;
+    background-image: url("~assets/icons/facebook-gray.svg");
+  }
+  &.icon-dashboard {
+    width: 25px;
+    height: 25px;
+    background-image: url("~assets/icons/dashboard.svg");
+  }
+  &.icon-setting {
+    width: 25px;
+    height: 25px;
+    background-image: url("~assets/icons/setting.svg");
+  }
+  &.icon-vow {
+    width: 25px;
+    height: 25px;
+    background-image: url("~assets/icons/vow.svg");
+  }
+  &.icon-money-recive {
+  width: 25px;
+  height: 25px;
+  background-image: url("~assets/icons/money-recive.svg");
+}
+&.icon-money-send {
+  width: 25px;
+  height: 25px;
+  background-image: url("~assets/icons/money-send.svg");
+}
+&.icon-users {
+  width: 25px;
+  height: 25px;
+  background-image: url("~assets/icons/users.svg");
+}
+}
