@@ -1,32 +1,31 @@
 <template>
    <div :class="{'menu': true, 'menu-open': showMenu}">
-
-<nuxt-link class="menu-item menu-item-active" to="/">
+<nuxt-link class="menu-item menu-item-active" to="/" @click.native="showMenu = false">
   <i class="icon icon-dashboard" />
   <span>מסך ראשי</span>
 </nuxt-link>
 
-<nuxt-link class="menu-item" to="customers">
+<nuxt-link class="menu-item" to="customers" @click.native="showMenu = false">
   <i class="icon icon-users" />
   <span>מתפללים</span>
 </nuxt-link>
 
-<nuxt-link class="menu-item" to="receipts">
+<nuxt-link class="menu-item" to="receipts"  @click.native="showMenu = false">
   <i class="icon icon-money-recive" />
   <span>הכנסות</span>
 </nuxt-link>
 
-<nuxt-link class="menu-item" to="expenses">
+<nuxt-link class="menu-item" to="expenses"  @click.native="showMenu = false">
   <i class="icon icon-money-send" />
   <span>הוצאות</span>
 </nuxt-link>
 
-<nuxt-link class="menu-item" to="vows">
+<nuxt-link class="menu-item" to="vows"  @click.native="showMenu = false">
   <i class="icon icon-vow" />
   <span>נדרים</span>
 </nuxt-link>
 
-<nuxt-link class="menu-item" to="\">
+<nuxt-link class="menu-item" to="\"  @click.native="showMenu = false">
   <i class="icon icon-setting" />
   <span>הגדרות</span>
 </nuxt-link>
@@ -52,6 +51,7 @@ export default {
     display: flex;
     flex-direction: column;
     gap: 2px;
+    overflow-x: hidden;
 
     .menu-item {
       cursor: pointer;
@@ -79,13 +79,18 @@ export default {
       }
     }
     @media (max-width: 1025px) {
-      display: none;
-      &-open {
       position: fixed;
+      right: -100vw;
+      top: 64px;
+      transition: 0.3s;
+      &-open {
+      right: 0;
+      top: 64px;
       background-color: white;
       z-index: 10;
       width: 100vw;
       display: flex;
+      transition: 0.3s;
     }
     }
   }

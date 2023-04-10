@@ -35,5 +35,12 @@ export default {
     justify-content: space-between;
 
   }
+  @media (min-width: 1025px) {
+    .right-side {
+      .icon-hamburger {
+        display: none;
+      }
+    }
+  }
 }
 </style>
