@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="right-side">
-      <i class="icon icon-hamburger"/>
+      <i class="icon icon-hamburger" @click="$nuxt.$emit('toggleMenu')"/>
       <span>חב"ד גני איילון</span>
     </div>
     <div class="left-side">
@@ -14,6 +14,11 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  name: 'Header',
+  }
+</script>
 <style lang="scss" scoped>
 .header {
   height: 64px;

@@ -1,5 +1,5 @@
 <template>
-   <div class="menu">
+   <div :class="{'menu': true, 'menu-open': showMenu}">
 
 <nuxt-link class="menu-item menu-item-active" to="/">
   <i class="icon icon-dashboard" />
@@ -39,8 +39,7 @@ export default {
     showMenu: false
     }),
   created() {
-    this.$nuxt.$on('toggeleMenu', () => {
-      alert('yess')
+    this.$nuxt.$on('toggleMenu', () => {
       this.showMenu = !this.showMenu
     })
   },
@@ -86,6 +85,7 @@ export default {
       background-color: white;
       z-index: 10;
       width: 100vw;
+      display: flex;
     }
     }
   }
