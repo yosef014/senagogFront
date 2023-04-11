@@ -2,9 +2,18 @@
   <v-app style="background-color: #f4f5fa">
     <Header />
     <div class="main-content">
-      <Menu/>
+      <Menu />
       <div class="left-side">
         <Nuxt />
+        <v-snackbar v-model="showSnackbar" :multi-line="multiLine">
+          {{ snackbarText }}
+          <template v-slot:action="{ attrs }">
+            <v-btn color="blue" text v-bind="attrs" @click="showSnackbar = false">
+              Close
+            </v-btn>
+          </template>
+
+        </v-snackbar>
       </div>
 
     </div>
@@ -15,9 +24,20 @@
 <script>
 export default {
   name: 'DefaultLayout',
-  // data: () => ({
-  //   showMenu: true
-  //   }),
+  middleware: 'checkLogin',
+  data() {
+    return {
+      showSnackbar: false,
+      snackbarText: ''
+    }
+  },
+  created() {
+    this.$nuxt.$on('showSnackbar', (text) => {
+      this.snackbarText = text
+      this.showSnackbar = true
+    })
+  }
+
 }
 </script>
 <style lang="scss" scoped>
@@ -31,4 +51,5 @@ export default {
     width: 100%;
     padding: 0 20px;
   }
-}</style>
+}
+</style>

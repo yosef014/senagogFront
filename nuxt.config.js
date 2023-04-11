@@ -25,6 +25,8 @@ export default {
   ],
 
   plugins: [
+    './plugins/api.js',
+    './plugins/axios.js'
   ],
 
   components: true,
@@ -35,13 +37,37 @@ export default {
   vuetify :{
     rtl: true
   },
+  auth: {
+    strategies: {
+      local: {
+        token: {
+          property: 'token',
+          global: true
+        },
+        user: {
+          property: 'user',
+          autoFetch: false
+        },
+        endpoints: {
+          // Get the token of the user from the server
+          login: { url: 'users/login', method: 'post', propertyName: 'token' },
+          logout: false,
+          // logout: { url: '/api/customers/logout', method: 'post' },
+          user: false
+          // Get the user information from the server
+          // user: { url: 'auth/find-one', method: 'get', propertyName: 'user' }
+        }
+      }
+    }
+  },
 
   modules: [
     '@nuxtjs/axios',
+    '@nuxtjs/auth'
   ],
 
   axios: {
-    baseURL: '/',
+    baseURL: 'http://localhost:4000/',
   },
 
 
