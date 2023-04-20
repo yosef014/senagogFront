@@ -19,7 +19,7 @@
             <v-btn color="#9155fd" @click="login">
                 התחברות</v-btn>
         </div>
-        <v-snackbar v-model="showSnackbar" :multi-line="multiLine">
+        <v-snackbar v-model="showSnackbar" :multi-line="true">
           {{ snackbarText }}
           <template v-slot:action="{ attrs }">
             <v-btn color="blue" text v-bind="attrs" @click="showSnackbar = false">
