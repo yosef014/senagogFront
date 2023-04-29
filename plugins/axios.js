@@ -1,10 +1,18 @@
 export default function ({ $axios }, inject) {
-//   $axios.onRequest((config) => {
-//     console.log('1111111111111');
-//     config.headers.common["Authorization"] = `Bearer ${"token"}`;
-//   });
+  $axios.onRequest((config) => {
+    config.headers.common['Access-Control-Allow-Origin'] = '*'
+    config.headers.common['Access-Control-Allow-Methods'] = 'GET, POST, PUT, DELETE, OPTIONS'
+    config.headers.common['Access-Control-Allow-Headers'] = 'Origin, X-Requested-With, Content-Type, Accept'
+  });
 
   // $axios.onResponse(res => {
   //   return res.data
+  // })
+
+  // instance.interceptors.request.use(config => {
+  //   config.headers.common['Access-Control-Allow-Origin'] = '*'
+  //   config.headers.common['Access-Control-Allow-Methods'] = 'GET, POST, PUT, DELETE, OPTIONS'
+  //   config.headers.common['Access-Control-Allow-Headers'] = 'Origin, X-Requested-With, Content-Type, Accept'
+  //   return config
   // })
 }

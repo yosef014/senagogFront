@@ -68,7 +68,11 @@ export default {
 
   axios: {
     baseURL: 'http://localhost:4000/',
+    // proxyHeaders: false,
+    // proxy: true,
+    // credentials: false
   },
+
 
 
   build: {
