@@ -1,3 +1,7 @@
+import Cookies from 'js-cookie'
+import Cookie from 'cookie'
+
+
 export default {
   namespaced: true,
 

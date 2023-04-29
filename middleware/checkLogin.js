@@ -1,6 +1,6 @@
-export default function ({ store, redirect, route }) {
+export default function ({ store, redirect, route, router }) {
   console.log('');
-    if (!store?.state?.auth?.loggedIn || !Object.keys(store?.state?.auth?.user).length) {
-      // redirect('login')
+    if (!store?.state?.auth?.loggedIn || !Object.keys(store.$auth?.$state?.user)?.length) {
+      redirect('login')
     }
   }
